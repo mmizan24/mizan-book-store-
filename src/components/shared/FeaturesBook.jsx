@@ -1,0 +1,126 @@
+import React from 'react';
+
+
+
+const Fea_books=
+
+[
+    {
+        "id": 1,
+        "title": "The Silent Forest",
+        "author": "Elena Vance",
+        "description": "A gripping tale of a woman who discovers an ancient secret hidden deep within the woods of her childhood home.",
+        "category": "Story",
+        "available_quantity": 14,
+        "image_url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 2,
+        "title": "Mastering React 18",
+        "author": "David Miller",
+        "description": "A comprehensive guide to building scalable modern web applications using the latest features of React.",
+        "category": "Tech",
+        "available_quantity": 25,
+        "image_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 3,
+        "title": "Cosmic Frontiers",
+        "author": "Dr. Sarah Jenkins",
+        "description": "An exploration of the most distant galaxies and the physics that governs the expansion of our universe.",
+        "category": "Science",
+        "available_quantity": 8,
+        "image_url": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 4,
+        "title": "Beneath the Neon Lights",
+        "author": "Kaito Tanaka",
+        "description": "A cyberpunk thriller set in a futuristic Tokyo where memory can be bought and sold on the black market.",
+        "category": "Story",
+        "available_quantity": 19,
+        "image_url": "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 5,
+        "title": "Quantum Computing for Beginners",
+        "author": "Michael Chen",
+        "description": "Breaking down the complex principles of qubits, superposition, and entanglement into easy-to-understand concepts.",
+        "category": "Tech",
+        "available_quantity": 12,
+        "image_url": "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 6,
+        "title": "The Biology of Resilience",
+        "author": "Dr. Maria Rodriguez",
+        "description": "A look into how the human body and mind adapt to extreme stress and trauma at a cellular level.",
+        "category": "Science",
+        "available_quantity": 31,
+        "image_url": "https://images.unsplash.com/photo-1532187875605-2fe35851146a?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 7,
+        "title": "Whispers of the Ancestors",
+        "author": "Amara Okafor",
+        "description": "A rich historical fiction following three generations of a family across the changing landscape of West Africa.",
+        "category": "Story",
+        "available_quantity": 7,
+        "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 8,
+        "title": "Cloud Architecture Patterns",
+        "author": "Robert Sullivan",
+        "description": "Proven design patterns for building reliable and resilient systems on AWS, Azure, and Google Cloud.",
+        "category": "Tech",
+        "available_quantity": 22,
+        "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 9,
+        "title": "The Genetic Revolution",
+        "author": "Dr. Alice Wong",
+        "description": "Examining the ethics and potential of CRISPR technology in curing hereditary diseases.",
+        "category": "Science",
+        "available_quantity": 15,
+        "image_url": "https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 10,
+        "title": "Beyond the Event Horizon",
+        "author": "Marcus Thorne",
+        "description": "A hard sci-fi epic about humanity's first manned mission to a black hole.",
+        "category": "Story",
+        "available_quantity": 11,
+        "image_url": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 11,
+        "title": "AI Ethics and Governance",
+        "author": "Samantha Reed",
+        "description": "Navigating the legal and moral landscape of artificial intelligence in modern society.",
+        "category": "Tech",
+        "available_quantity": 5,
+        "image_url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=400"
+    },
+    {
+        "id": 12,
+        "title": "Climate Systems",
+        "author": "Gregory Nielsen",
+        "description": "A data-driven analysis of global weather patterns and the impact of oceanic changes.",
+        "category": "Science",
+        "available_quantity": 18,
+        "image_url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=400"
+    }
+]
+
+const FeaturesBook = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default FeaturesBook;

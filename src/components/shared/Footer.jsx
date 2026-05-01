@@ -14,7 +14,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
+        <footer className="bg-[radial-gradient(circle_at_top,_rgba(78,205,196,0.14),transparent_35%) text-slate-300 border-t border-slate-800">
             <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
 
@@ -75,7 +75,7 @@ const Footer = () => {
 
                 {/* Bottom Bar */}
                 <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs">
-                    <p>&copy; {currentYear} GBMIS. All rights reserved.</p>
+                    <p>&copy; {currentYear} Naira Book House. All rights reserved.</p>
                     <div className="mt-4 md:mt-0 space-x-6">
                         <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
                         <Link href="/terms" className="hover:text-white">Terms of Service</Link>

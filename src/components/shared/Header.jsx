@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(78,205,196,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(255,107,107,0.12),transparent_30%)] px-6 py-16 sm:px-10 ">
+        <div className="  relative overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(78,205,196,0.14),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(255,107,107,0.12),transparent_30%)] px-6 py-5 sm:px-10 ">
             <div className="mx-auto ">
                 <div className="flex flex-col items-center gap-6 rounded-[2rem] border border-white/10 bg-white/5 p-6 text-center shadow-[0_35px_80px_rgba(0,0,0,0.16)] backdrop-blur-xl sm:p-10">
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-end">
