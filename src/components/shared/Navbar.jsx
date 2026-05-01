@@ -20,15 +20,11 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="flex gap-4">
-                    {isLoggedIn ? (
-                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setIsLoggedIn(false)}>Logout</button>
-                    ) : (
-                        <NavLink href={"/login"} className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                            Login
-                        </NavLink>
-                    )}
-                    <NavLink href={"/rejister"} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-                        My Profile
+                    <NavLink href="/login" className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                        Login
+                    </NavLink>
+                    <NavLink href="/rejister" className="bg-lumina-teal hover:bg-teal-300 text-slate-950 font-bold py-2 px-4 rounded-full">
+                        Sign In
                     </NavLink>
                 </div>
             </div>
