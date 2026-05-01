@@ -1,13 +1,21 @@
 "use client";
 
-import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 const LoginPage = () => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [toast, setToast] = useState('');
+
+  useEffect(() => {
+    if (searchParams.get('from') === 'protected') {
+      setToast('Please log in to view this book.');
+    }
+  }, [searchParams]);
 
   const validateEmail = (value) => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
@@ -32,7 +40,9 @@ const LoginPage = () => {
       return;
     }
 
-    router.push('/');
+    localStorage.setItem('isLoggedIn', 'true');
+    const nextPath = searchParams.get('next') || '/';
+    router.push(nextPath);
   };
 
   return (
@@ -45,6 +55,11 @@ const LoginPage = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
+          {toast && (
+            <div className="rounded-3xl border border-lumina-teal/40 bg-lumina-teal/10 px-4 py-3 text-sm text-lumina-teal">
+              {toast}
+            </div>
+          )}
           {error && (
             <div className="rounded-3xl border border-rose-500/40 bg-rose-500/10 px-4 py-3 text-sm text-rose-200">
               {error}

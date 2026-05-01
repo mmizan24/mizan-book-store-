@@ -24,13 +24,13 @@ const Header = () => {
                     </p>
 
                     <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                        <a href="#books" className="inline-flex items-center justify-center rounded-full bg-[var(--color-lumina-teal)] px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-300">
+                        <a href={"/allbooks"} className="inline-flex items-center justify-center rounded-full bg-[var(--color-lumina-teal)] px-7 py-3 text-sm font-semibold text-slate-950 transition hover:bg-teal-300">
                             Explore Books
                         </a>
-                        <a href="#features" className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:border-[var(--color-lumina-teal)] hover:text-[var(--color-lumina-teal)]">
+                        {/* <a href="#features" className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:border-[var(--color-lumina-teal)] hover:text-[var(--color-lumina-teal)]">
                             Browse Genres
-                        </a>
-                    </div>
+                        </a> */}
+                    </div> 
                 </div>
             </div>
         </div>

@@ -1,46 +1,46 @@
 "use client";
 
-"use client";
+
 
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 const featuredBooks = [
   {
-    id: "1984",
-    title: "1984",
-    author: "George Orwell",
-    category: "Dystopian",
+    id: 1,
+    title: "The Silent Forest",
+    author: "Elena Vance",
+    category: "Story",
     price: "$12.99",
-    description: "A chilling vision of a surveillance society that still feels urgent.",
-    image: "https://images.unsplash.com/photo-1507842072343-583f20270319?w=400&q=80",
+    description: "A gripping tale of a woman who discovers an ancient secret hidden deep within the woods of her childhood home.",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=400",
   },
   {
-    id: "the-great-gatsby",
-    title: "The Great Gatsby",
-    author: "F. Scott Fitzgerald",
-    category: "Classic",
+    id: 2,
+    title: "Mastering React 18",
+    author: "David Miller",
+    category: "Tech",
     price: "$14.99",
-    description: "A glamorous and tragic portrait of love, wealth, and ambition.",
-    image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&q=80",
+    description: "A comprehensive guide to building scalable modern web applications using the latest features of React.",
+    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=400",
   },
   {
-    id: "to-kill-a-mockingbird",
-    title: "To Kill a Mockingbird",
-    author: "Harper Lee",
-    category: "Historical",
+    id: 3,
+    title: "Cosmic Frontiers",
+    author: "Dr. Sarah Jenkins",
+    category: "Science",
     price: "$11.99",
-    description: "A moving story about justice, courage, and growing up in the South.",
-    image: "https://images.unsplash.com/photo-1495446815901-a7297e3ffe02?w=400&q=80",
+    description: "An exploration of the most distant galaxies and the physics that governs the expansion of our universe.",
+    image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=400",
   },
   {
-    id: "the-alchemist",
-    title: "The Alchemist",
-    author: "Paulo Coelho",
-    category: "Adventure",
+    id: 4,
+    title: "Beneath the Neon Lights",
+    author: "Kaito Tanaka",
+    category: "Story",
     price: "$13.99",
-    description: "A timeless journey of self-discovery, dreams, and destiny.",
-    image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=400&q=80",
+    description: "A cyberpunk thriller set in a futuristic Tokyo where memory can be bought and sold on the black market.",
+    image: "https://images.unsplash.com/photo-1614850523296-d8c1af93d400?auto=format&fit=crop&q=80&w=400",
   },
 ];
 
@@ -74,11 +74,11 @@ export default function Home() {
                 </Link>
                 <div className="relative group">
                   <div className="absolute inset-0 bg-white/5 blur-lg rounded-2xl group-hover:bg-lumina-teal/10 transition-colors" />
-                  <input
+                  {/* <input
                     type="text"
                     placeholder="Search by title..."
                     className="relative w-64 md:w-80 px-6 py-5 glass-card rounded-2xl focus:outline-none focus:border-lumina-teal/50 text-sm tracking-wide bg-white/5"
-                  />
+                  /> */}
                 </div>
               </div>
             </motion.div>
