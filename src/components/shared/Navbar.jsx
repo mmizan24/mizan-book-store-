@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import NavLink from './NavLink';
 
 const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,23 +13,20 @@ const Navbar = () => {
                 <div></div>
                 <ul className="flex gap-4">
                     <li>
-                        <Link href={"/"}>Home</Link>
+                        <NavLink href={"/"}>Home</NavLink>
                     </li>
                     <li>
-                        <Link href={"/allbooks"}>All books</Link>
+                        <NavLink href={"/allbooks"}>All books</NavLink>
                     </li>
                 </ul>
                 <div className="flex gap-4">
                     {isLoggedIn ? (
                         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" onClick={() => setIsLoggedIn(false)}>Logout</button>
                     ) : (
-                        <Link href={"/login"} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                            Login
-                        </Link>
+                        <NavLink href={"/login"}>Login</NavLink>
                     )}
-                    <Link href={"/rejister"} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-                        Registration
-                    </Link>
+                    <NavLink href={"/rejister"}>Registration</NavLink>
+                    
                 </div>
             </div>
         </nav>
